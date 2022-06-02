@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="siwap_design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+
+            <div class="head_titlebar">
+                <div id="head_titlebar_logo">
+                    <span>SIWAP</span>
+                </div>
+                <nav>
+                    <a href="#">HOME</a>
+                    <a href="#">CATEGORY</a>
+                    <a href="#">SERVICE</a>
+                    <a href="#">ROADMAP</a>
+                </nav>
+                <!-- <div id="head_titlebar_button"> -->
+                    <button class="head_titlebar_button">Connect Wallet</button>
+                <!-- </div> -->
+            </div>
+
+
+            <div class="head_heading">
+                <h1><strong>ENHANCE DEFI & NFT</strong>  </h1>
+                <p>VENTURE <br>STUDIO</p>
+                <div class="head_heading_endtime">
+                    <span class="endtime">End Time</span>
+
+
+                    <div id="time">
+                        <div class="circle">
+                            <div id="hours">00</div>
+                        </div>
+                        <div class="circle">
+                            <div id="minutes">00</div>
+                        </div>
+                        <div class="circle">
+                            <div id="seconds">00</div>
+                        </div>
+                        <div class="ap">
+                            <div id="ampm">AM</div>
+                        </div>
+
+                    </div>
+
+
+                    <button>Place a Bid</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="section">
+            <div class="section_description">
+                <div><p>We have 10,000+ NFTs. You can check it & Explore the future.</p></div>
+                <div class="section_verified">
+                    <svg class="svg_color" xmlns="http://www.w3.org/2000/svg" height="100"  viewBox="0 0 512 512"><g fill="none" fill-rule="evenodd">
+                        <linearGradient id="my-cool-gradient" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#db296a" />
+                            <!-- <stop offset="50%" stop-color="#224488" /> -->
+                            <stop offset="100%" stop-color="#c34f2f" />
+                          </linearGradient>
+                        <path  d="M256 472.153L176.892 512l-41.725-81.129-86.275-16.654 11.596-91.422L0 256l60.488-66.795-11.596-91.422 86.275-16.654L176.892 0 256
+                         39.847 335.108 0l41.725 81.129 86.275 16.654-11.596 91.422L512 256l-60.488 66.795 11.596 91.422-86.275 16.654L335.108 512z" fill="url(#my-cool-gradient) #447799";
+                         "/>
+                        <path d="M211.824 284.5L171 243.678l-36 36 40.824 40.824-.063.062 36 36 .063-.062.062.062 36-36-.062-.062L376.324 192l-36-36z" fill="#fff"/>
+                    </g></svg>
+                    <h1 id="text">
+                    <span style="transform: rotate(-126deg);">V</span>
+                    <span style="transform: rotate(-98deg);">E</span>
+                    <span style="transform: rotate(-71deg);">R</span>
+                    <span style="transform: rotate(-48deg);">I</span>
+                    <span style="transform: rotate(-26deg);">F</span>
+                    <span style="transform: rotate(-2deg);">I</span>
+                    <span style="transform: rotate(15deg);">E</span>
+                    <span style="transform: rotate(35deg);">D</span>
+                    <span style="transform: rotate(60deg);">N</span>
+                    <span style="transform: rotate(90deg);">F</span>
+                    <span style="transform: rotate(112deg);">T</span>
+                </h1></div>
+            </div>
+            <div class="section_categories">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    
+</body>
+<script>
+    setInterval(()=>{
+
+    let hours = document.getElementById('hours');
+    let minutes = document.getElementById('minutes');
+    let seconds = document.getElementById('seconds');
+    let ampm = document.getElementById('ampm');
+
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+    let am = h >= 12 ? "PM" : "AM";
+
+
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+
+
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
+    ampm.innerHTML = am;
+
+    })
+    
+
+</script>
+</html>
